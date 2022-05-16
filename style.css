@@ -3,10 +3,15 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header, main, footer{
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 header{
-    height: 250px;
     background-color: rgb(49,97,224);
     color: rgb(255,255 ,255);
 }
@@ -17,6 +22,7 @@ main{
 
 footer{
     background-color: rgb(35,39,42);
+    color: rgb(255,255 ,255);
 }
 
 /* solo per capire */
@@ -35,13 +41,14 @@ div, section, nav, a, .discord, .accedi, .links, img, article{
     display: flex;
 }
 
-.reverse{
+.flex.white{
+    background-color: rgb(255,255 ,255);
+}
+.flex.reverse.grey{
     flex-direction: row-reverse;
+    background-color: rgb(227, 227, 227);
 }
 
-.column{
-    flex-direction: column;
-}
 
 /* header */
 
@@ -49,6 +56,7 @@ div, section, nav, a, .discord, .accedi, .links, img, article{
     height: 30px;
     justify-content: space-between;
     background-color: rgb(55, 138, 255);
+    padding-bottom: 50px;
 }
 
 .discord,.accedi{
@@ -73,18 +81,39 @@ a{
     text-decoration: none;
 }
 
+/* main */
 .titolo1{
     width: 800px;
     margin: 0 auto;
     background-color: rgb(166, 197, 223);
 }
 
-figure{
-    background-color: rgb(243, 222, 191);
-    width: 500px;
+figure, article{
+    width: calc(100% /2);
     height: 300px;
 }
 
-article{
-    width: 500px;
+img{
+    width: 200px;
+}
+
+.main-last{
+    text-align: center;
+}
+
+/* footer */
+.footer-links{
+    width: calc(100% / 5);
+    background-color: rgb(71, 74, 75);
+}
+.social-icon{
+    display: inline-block;
+}
+
+nav{
+    border-bottom: 1px solid rgb(55, 138, 255);
+}
+
+.final{
+    justify-content: space-between;
 }
