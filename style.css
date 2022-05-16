@@ -1,0 +1,43 @@
+/* generics */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(49,97,224);
+    color: rgb(255,255 ,255 );
+}
+
+main{
+    background-color: white;
+}
+
+footer{
+    background-color: rgb(35,39,42);
+}
+
+/* solo per capire */
+div, section, nav{
+    border: 1px dashed rgb(0, 0, 0);
+}
+
+/* utils */
+.container{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.column{
+    flex-direction: column;
+}
